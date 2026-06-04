@@ -1,0 +1,5 @@
+pre-release-hook = ["git-cliff", "-o", "CHANGELOG.md", "--tag", "{{version}}"]
+push = true
+tag  = true
+pre-release-commit-message = "chore(release): v{{version}}"
+tag-message                 = "Release v{{version}}"

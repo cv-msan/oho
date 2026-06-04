@@ -1,0 +1,12 @@
+#!/bin/sh
+
+commit_msg=$(cat "$1")
+pattern="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\(.+\))?!?: .{1,100}"
+
+if ! echo "$commit_msg" | grep -qE "$pattern"; then
+    echo ""
+    echo "❌ 提交信息格式不正确"
+    echo "正确格式：type(scope): description"
+    echo "示例：feat(auth): 添加 JWT 登录接口"
+    exit 1
+fi

@@ -6,7 +6,8 @@ members = [
     "oho-file",
     "oho-job",
     "oho-server"
-, "oho-common"]
+, "oho-common",
+    "xtask",]
 
 [workspace.dependencies]
 axum={ version = "0.8.9", features = ["macros","tokio"] }

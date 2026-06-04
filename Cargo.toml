@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+    "oho-common",
+    "oho-system",
+    "oho-file",
+    "oho-job",
+    "oho-server"
+, "oho-common"]
+
+[workspace.dependencies]
+axum={ version = "0.8.9", features = ["macros","tokio"] }

@@ -10,4 +10,24 @@ members = [
     "xtask",]
 
 [workspace.dependencies]
-axum={ version = "0.8.9", features = ["macros","tokio"] }
+# web框架
+axum={ version = "0.8",default-features = false,features = ["macros","tokio"] }
+# 异步运行时
+tokio ={version = "1",features = ["full"]}
+# 序列化 / 反序列化
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# 配置文件加载
+config = "0.15"
+# 错误类型定义宏
+thiserror = "2"
+# 时间处理
+chrono = { version = "0.4", features = ["serde"] }
+# UUID 生成
+uuid = { version = "1", features = ["v4", "serde"] }
+# ORM 框架
+sea-orm = { version = "1", features = [
+    "sqlx-postgres",
+    "runtime-tokio-rustls",
+    "macros",
+] }

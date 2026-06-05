@@ -1,0 +1,10 @@
+[server]
+host = "0.0.0.0"
+prot = 9001
+[database]
+max_connections = 10          # 数据库最大连接
+min_connections = 1           # 数据库最小连接
+connect_timeout = 30          # 秒
+[jwt]
+expire_seconds = 86400         # 24小时
+refresh_expire_seconds = 604800  # 7天

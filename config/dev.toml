@@ -1,0 +1,10 @@
+[database]
+host = "localhost"
+port = 5432
+username = "postgres"
+password = "root"
+database = "oho_dev"
+schema = "public"  # 默认 public，一般不需要改
+
+[jwt]
+secret = "dev-secret-change-in-production"

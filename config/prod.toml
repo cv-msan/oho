@@ -1,0 +1,9 @@
+[database]
+url = "localhost"
+username = "postgresql"
+password = "postgresql"
+database = "oho"
+schema = "public"  # 默认 public，一般不需要改
+
+[jwt]
+secret = "x7$Kp2#mQ9@nL4&vR8!wZ3^jF6*hY1_uB5"

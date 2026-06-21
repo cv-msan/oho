@@ -6,9 +6,9 @@ fn main() {
     match task.as_deref() {
         Some("init-dev") => init_dev(),
         _ => {
-            eprintln!("用法: cargo xtask <task>");
+            eprintln!("用法: cargo run --package xtask -- init-dev");
             eprintln!("可用任务:");
-            eprintln!("  init-dev   初始化开发环境");
+            eprintln!(" init-dev   初始化开发环境");
         }
     }
 }

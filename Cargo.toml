@@ -5,9 +5,10 @@ members = [
     "oho-system",
     "oho-file",
     "oho-job",
-    "oho-server"
-, "oho-common",
-    "xtask",]
+    "oho-server",
+    "oho-common",
+    "oho-migration",
+    "xtask", ]
 
 [workspace.dependencies]
 # web框架
@@ -32,3 +33,7 @@ sea-orm = { version = "1", features = [
     "macros",
 ] }
 anyhow= "1"
+sea-orm-migration = { version = "1", features = [
+    "sqlx-postgres",
+    "runtime-tokio-rustls",
+] }
